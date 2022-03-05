@@ -17,11 +17,18 @@
             pulaLinha();
         }
 
-        var pesoMiguel = 80;
-        var alturaMiguel = 1.80;
-        var imcMiguel = pesoMiguel / (alturaMiguel * alturaMiguel);
+        function imc(userWeight,userHeight) {
 
-        mostra("O IMC de Miguel é: " + imcMiguel.toFixed(2));
+            var userImc = userWeight / (userHeight * userHeight);
+            console.log("O IMC do usuário é: " + userImc);
+        }
+
+        console.log("Utilize a função imc() para calcular seu IMC!")
+        // var pesoMiguel = 80;
+        // var alturaMiguel = 1.80;
+        // var imcMiguel = pesoMiguel / (alturaMiguel * alturaMiguel);
+
+        //mostra("O IMC de Miguel é: " + imcMiguel.toFixed(2));
 
     </script>
 </body>
