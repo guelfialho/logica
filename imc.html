@@ -8,21 +8,20 @@
 </head>
 <body>
     <script>
-
-        function pulaLinha() {
-            document.write("<br><hr><br>");
+        function pulaLinha () {
+            document.write("<br><br>");
         }
 
         function mostra(frase) {
-            document.write("<big>" + frase + "</big");
+            document.write(frase);
             pulaLinha();
         }
 
-        var ano = 2019;
-            mostra("Eu nasci em : " + (ano - 25));
-            mostra("Adriano nasceu em : " + (ano - 26));
-            mostra("Paulo nasceu em : " + (ano - 32));
+        var pesoMiguel = 80;
+        var alturaMiguel = 1.80;
+        var imcMiguel = pesoMiguel / (alturaMiguel * alturaMiguel);
 
+        mostra("O IMC de Miguel é: " + imcMiguel.toFixed(2));
 
     </script>
 </body>
