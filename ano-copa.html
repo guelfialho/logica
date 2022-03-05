@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula quais anos tiveram copa</title>
+</head>
+<body>
+    <script>
+        var ano = parseInt(prompt("Digite o ano atual"));
+
+        for (i = 1930; i <= ano; i = i + 4) {
+            document.write("<br> Teve copa em " + i);
+        }
+
+        document.write("<hr>");
+
+        var anoCopa = 1930;
+        
+        while(anoCopa <= ano) {
+            document.write(" <br> Teve copa em " + anoCopa);
+            anoCopa = anoCopa + 4;
+        }
+
+    </script>
+</body>
+</html>
