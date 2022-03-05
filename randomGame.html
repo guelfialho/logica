@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try to discover the number! </title>
+</head>
+<body>
+    <script>
+        function luckyNumber() {
+            var number = Math.round(Math.random() * 10) // A random number 1-10 
+            return number;
+        }
+        var luckyNumber = luckyNumber();
+        var userChoice = parseInt(prompt("Choose a random number from 1 to 10."));
+        
+        if (luckyNumber == userChoice) {
+            console.log("Your answer is " + userChoice + " and the lucky number is " + luckyNumber + " Congratulations!");
+      } else {
+            console.log("Your answer is " + userChoice + " and the lucky number is " + luckyNumber + " Try again!");
+      }
+    </script>
+</body> 
+</html>
