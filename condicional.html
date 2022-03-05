@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var lastYearScore = parseInt(prompt("write your team's score from last year"))
+        var win = parseInt(prompt("Write the number of wins"));
+        var draws = parseInt(prompt("Write the number of draws"));
+        var score = win * 3 + draws;
+
+        if (lastYearScore < score) {
+
+            alert("Your team's score is better than last year");
+        } else if (lastYearScore > score) {
+            alert("Your team's score is worse than last year");
+        } else if (lastYearScore == score) {
+            alert("Your team's score is equal than last year");
+        }
+    </script>
+</body>
+</html>
