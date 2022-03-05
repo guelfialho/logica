@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IMC Calculator</title>
+    <title>BMI Calculator</title>
 </head>
 <body>
     <script>
-        function calcImc(userWeight,userHeight) {
+        function calcBmi(userWeight,userHeight) {
             return userWeight / (userHeight * userHeight);
         }
 
@@ -17,7 +17,20 @@
         var height = prompt(username + "What's your height?");
        
         document.write("<br>");
-        document.write(username + ", your IMC is " + calcImc(weight, height));
+
+        var bmi =  calcBmi(weight, height);
+
+        if (bmi < 18.5) {
+            document.write(username + ", your BMI is " + bmi +" and you're underweight.");
+        } else if (bmi >= 18.5 && bmi < 25) {
+            document.write(username + ", your BMI is " + bmi +" and you're normal.");
+        } else if (bmi >= 25 && bmi <30) {
+            document.write(username + ", your BMI is " + bmi +" and you're overweight");
+        } else if (bmi >= 30 && bmi < 35) {
+            document.write(username + ", your BMI is " + bmi +" and you're obese");
+        } else if (bmi >= 35) {
+            document.write(username + ", your BMI is " + bmi +" and you're extremely obese");
+        }
 
       
 
